@@ -1,0 +1,53 @@
+<script>
+
+show_link();
+
+function show_link(){
+
+    var counter = 30;
+
+    var timer_status = setInterval(function(){
+
+       counter--;
+
+       if(counter > 0) {
+
+            document.getElementById("time_status").innerHTML="Your Link will show here After " + counter + " seconds";
+
+       }
+
+       else{
+
+            document.getElementById("time_status").style.display = "none";
+
+            document.getElementById("link").style.display = "block";
+
+            clearInterval(timer_status);
+
+      }
+
+    }, 1000);
+
+}
+
+  </script><p style="text-align: left;">show ads and other Contents here.</p><h3><br /></h3><h3><br /></h3><h3> Your Link is Loading</h3>
+
+<a href="#" id="link" style="display: none;">Link loaded successfully. Click here.</a><p id="time_status">Your Link will show Here after 30 seconds</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
